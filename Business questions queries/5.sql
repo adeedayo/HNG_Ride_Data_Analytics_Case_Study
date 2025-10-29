@@ -1,6 +1,5 @@
 -- Calculate the cancellation rate per city and identify which city had the highest cancellation rate?
 
-
 SELECT 
     pickup_city AS city,
     COUNT(*) AS total_rides,
@@ -14,3 +13,4 @@ FROM rides_raw
 GROUP BY pickup_city
 ORDER BY cancellation_rate_percent DESC
 LIMIT 1;
+
