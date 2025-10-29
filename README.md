@@ -11,7 +11,7 @@ Insights and recommendations will be provided on the following key areas:
 The SQL queries utilized to clean, organize and prepare the data for this project can found here.
 Targeted SQL queries regarding various business questions can be found here.
 
-## Data Structure $ Initial Checks
+## Data Structure & Initial Checks
 HNG Rides's database as seen below consists of four tables: drivers_raw, payments_raw, riders_raw and rides_raw, with a total row count of 112,000 records
 
 
