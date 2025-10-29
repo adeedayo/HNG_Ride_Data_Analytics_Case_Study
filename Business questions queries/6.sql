@@ -1,5 +1,5 @@
-
 -- Identify riders who have taken more than 10 rides but never paid with cash.
+
 WITH cash_riders AS (
     SELECT DISTINCT r.rider_id
     FROM rides_raw r
@@ -25,3 +25,4 @@ FROM completed_rides c
 WHERE c.total_rides > 10
   AND c.rider_id NOT IN (SELECT rider_id FROM cash_riders)
 ORDER BY c.total_rides DESC;
+
