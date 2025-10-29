@@ -1,4 +1,5 @@
 -- Find the top 3 drivers in each city by total revenue earned between June 2021 and Dec 2024. If a driver has multiple cities, count revenue where they picked up passengers in that city.
+
 WITH driver_revenue AS (
     SELECT 
         r.driver_id,
@@ -26,3 +27,4 @@ SELECT
 FROM ranked_drivers
 WHERE city_rank <= 3
 ORDER BY pickup_city, city_rank;
+
