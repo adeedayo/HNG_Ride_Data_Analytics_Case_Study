@@ -1,4 +1,4 @@
-Which quarter had the biggest YoY growth?
+-- Which quarter had the biggest YoY growth?
 
 WITH quarterly_revenue AS (
   SELECT
@@ -29,3 +29,4 @@ SELECT *
 FROM yoy
 ORDER BY yoy_growth_percent DESC NULLS LAST
 LIMIT 1;
+
