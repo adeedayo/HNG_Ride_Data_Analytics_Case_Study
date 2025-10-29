@@ -1,6 +1,5 @@
 -- For each driver, calculate their average monthly rides since signup. Who are the top 5 drivers with the highest consistency (most rides per active month)?
 
-
 WITH driver_activity AS (
     SELECT 
         d.driver_id,
@@ -37,3 +36,4 @@ SELECT
 FROM activity_calc
 ORDER BY avg_rides_per_month DESC
 LIMIT 5;
+
