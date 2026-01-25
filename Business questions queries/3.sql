@@ -1,5 +1,4 @@
 -- Which quarter had the biggest YoY growth?
-
 WITH quarterly_revenue AS (
   SELECT
     EXTRACT("YEAR" FROM paid_date)::INT AS "year",
@@ -29,4 +28,5 @@ SELECT *
 FROM yoy
 ORDER BY yoy_growth_percent DESC NULLS LAST
 LIMIT 1;
+
 
